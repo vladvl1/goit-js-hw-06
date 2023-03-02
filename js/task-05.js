@@ -3,9 +3,12 @@ const output = document.querySelector("#name-output");
 const outputDefault = output.textContent;
 
 textInput.addEventListener("input", event => {
-    event.preventDefault;
+    event.preventDefault; 
     output.textContent = event.currentTarget.value;
-    if (event.currentTarget.value === '') {
+    
+    if (event.currentTarget.value.trim() === '') {
         output.textContent = outputDefault;
-    }
+         }
+   
+    
 });
